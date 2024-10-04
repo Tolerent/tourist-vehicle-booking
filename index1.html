@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tourist Vehicle Booking</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Tourist Vehicle Booking</h1>
+    </header>
+
+    <section class="vehicle-selection">
+        <h2>Select a Vehicle</h2>
+        <div class="vehicles">
+            <button class="vehicle" data-vehicle="Force Traveler">Force Traveler</button>
+            <button class="vehicle" data-vehicle="Mini Bus">Mini Bus</button>
+            <button class="vehicle" data-vehicle="Bus">Bus</button>
+        </div>
+    </section>
+
+    <section class="booking-form">
+        <h2>Book Your Vehicle</h2>
+        <form id="bookingForm">
+            <label for="pickup">Pickup Location:</label>
+            <input type="text" id="pickup" required>
+
+            <label for="dropoff">Dropoff Location:</label>
+            <input type="text" id="dropoff" required>
+
+            <label for="date">Pickup Date:</label>
+            <input type="date" id="date" required>
+
+            <button type="submit">Book Now</button>
+        </form>
+    </section>
+
+    <section class="price-estimate">
+        <h2>Estimated Price: <span id="price">0</span></h2>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
